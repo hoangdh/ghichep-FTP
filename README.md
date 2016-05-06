@@ -79,7 +79,7 @@ Tất cả được gửi qua kênh kết nối dưới dạng clear-text (Bao g
 
 Trường hợp client ở đằng sau Firewall và không cho phép các kết nối TCP, PassiveFTP được sử dụng trong trường hợp này. Khi đó, client sẽ sử dụng một kết nối điều khiển gửi một câu lệnh PASV tới server yêu cầu port truyền data của server. Sau khi nhận được Port của server, client sẽ sử dụng một cổng random để kết nối dữ liệu vào bằng cổng bất kỳ của mình đến port vừa nhận được.
 
-##### C. Phương thức truyền dữ liệu
+##### c. Phương thức truyền dữ liệu
 
 Khi kênh dữ liệu đã được thiết lập xong giữa Server-DTP với User-DTP, dữ liệu sẽ được truyền trực tiếp từ phía client tới phía server, hoặc ngược lại, dựa theo các lệnh được sử dụng. Do thông tin điều khiển được gửi đi trên kênh điều khiển, nên toàn bộ kênh dữ liệu có thể được sử dụng để truyền dữ liệu.
 
@@ -103,3 +103,8 @@ Khi kênh dữ liệu đã được thiết lập xong giữa Server-DTP với U
 - Phương thức truyền sử dụng một kỹ thuật nén đơn giản,
 là "Run-length encoding" để phát hiện và xử lý các đoạn lặp trong dữ liệu được gửi đi để giảm chiều dài của thông điệp
 Thông tin đã được nén sẽ được gắn các header và được xử lý như ở Block mode.
+
+#### 4. Tham khảo:
+
+- http://sinhvienit.net/forum/tim-hieu-ve-giao-thuc-ftp.28754.html
+- https://en.wikipedia.org/wiki/File_Transfer_Protocol
